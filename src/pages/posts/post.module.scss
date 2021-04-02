@@ -44,3 +44,34 @@
     -webkit-text-fill-color: transparent;
   }
 }
+
+.test {
+  display: flex;
+}
+
+.continueReading {
+  min-width: 100%;
+  padding: 2rem;
+  text-align: center;
+  background: var(--gray-850);
+
+  border-radius: 100px;
+  font-size: 1.25rem;
+  font-weight: bold;
+
+  margin: 2rem 0 2rem;
+
+  span {
+    color: var(--yellow-500);
+    margin-left: 0.5rem;
+    transition: text-decoration 0.2s;
+  }
+
+  transition: filter 0.2s;
+  &:hover {
+    filter: saturate(2);
+    span {
+      text-decoration: underline;
+    }
+  }
+}
